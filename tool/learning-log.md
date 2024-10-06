@@ -39,7 +39,7 @@ The other way of insteading it is the same but there isn't any words.
     kaboom();
 </script>
 ````
-![hi](Screenshot_6-10-2024_15712_jsbin.com.jpeg)
+![hi](Screenshot_6-10-2024_15134_jsbin.com.jpeg)
 
 ### X/X/XX:
 * Text
