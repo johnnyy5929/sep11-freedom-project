@@ -29,7 +29,7 @@ add([
 </script>
 `````
 This is one way of insteading, if you instead this way there will be text and you can change teh sides of the background. 
-![hi](hi.png)
+![hi](Screenshot_6-10-2024_15712_jsbin.com.jpeg)
 
 
 ### X/X/XX:
