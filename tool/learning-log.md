@@ -1,12 +1,12 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **Kaboom**
 
-## Project: **X**
+## Project: **Cooking game**
 
 ---
 
-### X/X/XX:
+### 10/6/24:
 * Text
 
 ### X/X/XX:
