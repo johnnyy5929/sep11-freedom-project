@@ -254,6 +254,7 @@ debug.inspect = true
 
 `````
 ![js](Screenshot_20-10-2024_192348_kaboomjs.com.jpeg)
+So as you can see here I used all the code I needed for a fake paceman game. You can move and eat the ghost. This is what I did for LL1.
 
 <!-- 
 * Links you used today (websites, videos, etc)
