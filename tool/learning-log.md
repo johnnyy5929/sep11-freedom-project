@@ -253,6 +253,7 @@ player.onUpdate(() => {
 debug.inspect = true
 
 `````
+![js]()
 
 <!-- 
 * Links you used today (websites, videos, etc)
