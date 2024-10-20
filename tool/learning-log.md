@@ -28,10 +28,10 @@ add([
 
 </script>
 `````
-This is one way of insteading, if you instead this way there will be text and you can change teh sides of the background. 
+This is one way of insteading, if you instead this way there will be text and you can change the sides of the background. 
 ![hi](Screenshot_6-10-2024_15712_jsbin.com.jpeg)
 
-The other way of insteading it is the same but there isn't any words. 
+The other way of insteading it is the same but there aren't any words. 
 ````js
 <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
 
@@ -41,7 +41,7 @@ The other way of insteading it is the same but there isn't any words.
 ````
 ![hi](Screenshot_6-10-2024_15134_jsbin.com.jpeg)
 
-So after doing m,y research on Kaboom I learned many things and combined them. So somethings that I added to this is sprite which is the character of this game. Another thing I added was const which makes everything the same. another example of this is 
+So after doing my research on Kaboom I learned many things and combined them. So somethings that I added to this is sprite which is the character of this game. Another thing I added was const which makes everything the same. another example of this is 
 `````js 
 const Speed =320
 `````
@@ -254,7 +254,7 @@ debug.inspect = true
 
 `````
 ![js](Screenshot_20-10-2024_192348_kaboomjs.com.jpeg)
-So as you can see here I used all the code I needed for a fake paceman game. You can move and eat the ghost. This is what I did for LL1.
+So as you can see here I used all the code I needed for a fake pacman game. You can move and eat the ghost. This is what I did for LL1.
 
 <!-- 
 * Links you used today (websites, videos, etc)
@@ -263,3 +263,5 @@ So as you can see here I used all the code I needed for a fake paceman game. You
 * Questions you still have
 * What you're going to try next
 -->
+
+
