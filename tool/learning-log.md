@@ -73,9 +73,26 @@ onKeyDown("e", () => {
 	player.angle += SPEED * dt()
 })
 `````
+Another thing I added was add a sprite with a mass that you can move:
+`````js
+add([
+	sprite("steel"),
+	pos(100, 200),
+	area(),
+	// This will not be static, but have a big mass that's hard to push over
+	body({ mass: 10 }),
+])
+`````
+Last code I have for my tinkeringis:
+`````js
+player.onCollide("enemy", (enemy) => {
+	destroy(enemy)
+})
 
-
-
+// .onCollideUpdate() runs every frame when an object collides with another object
+player.onCollideUpdate("enemy", () => {
+})
+`````
 
 <!-- 
 * Links you used today (websites, videos, etc)
