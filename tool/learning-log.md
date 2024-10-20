@@ -32,7 +32,7 @@ This is one way of insteading, if you instead this way there will be text and yo
 ![hi](Screenshot_6-10-2024_15712_jsbin.com.jpeg)
 
 The other way of insteading it is the same but there isn't any words. 
-````
+````js
 <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
 
 <script>
