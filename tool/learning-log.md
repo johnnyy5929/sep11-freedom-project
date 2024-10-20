@@ -83,7 +83,7 @@ add([
 	body({ mass: 10 }),
 ])
 `````
-Last code I have for my tinkeringis:
+Last code I have for my tinkering is:
 `````js
 player.onCollide("enemy", (enemy) => {
 	destroy(enemy)
@@ -92,6 +92,166 @@ player.onCollide("enemy", (enemy) => {
 // .onCollideUpdate() runs every frame when an object collides with another object
 player.onCollideUpdate("enemy", () => {
 })
+`````
+
+So combining all these codes I came up with a test paceman game:
+
+`````Js 
+// Collision handling
+
+// Start kaboom
+kaboom({
+	scale: 2,
+})
+
+// Load assets
+loadSprite("bean", "/sprites/bean.png")
+loadSprite("ghosty", "/sprites/ghosty.png")
+loadSprite("grass", "/sprites/grass.png")
+loadSprite("steel", "/sprites/steel.png")
+
+// Define player movement speed
+const SPEED = 320
+
+// Add player game object
+const player = add([
+	sprite("bean"),
+	pos(80, 120),
+	color(),
+	rotate(0),
+
+	area(),
+
+	body(),
+])
+
+
+onKeyDown("left", () => {
+	player.move(-SPEED, 0)
+})
+
+onKeyDown("right", () => {
+	player.move(SPEED, 0)
+})
+
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+
+onKeyDown("q", () => {
+	player.angle -= SPEED * dt()
+})
+
+onKeyDown("e", () => {
+	player.angle += SPEED * dt()
+})
+
+
+for (let i = 0; i < 3; i++) {
+
+	const x = rand(0, width())
+	const y = rand(0, height())
+
+	add([
+		sprite("ghosty"),
+		pos(x, y),
+		area(),
+		"enemy",
+	])
+
+}
+
+
+add([
+	sprite("steel"),
+	pos(100, 200),
+	area(),
+	body({ mass: 10 }),
+])
+
+add([
+	sprite("steel"),
+	pos(100, 200),
+	area(),
+	body({ mass: 10 }),
+])
+
+add([
+	sprite("steel"),
+	pos(100, 200),
+	area(),
+	body({ mass: 10 }),
+])
+add([
+	sprite("steel"),
+	pos(250, 320),
+	area(),
+	body({ mass: 10 }),
+])
+add([
+	sprite("steel"),
+	pos(200, 300),
+	area(),
+	body({ mass: 10 }),
+])
+add([
+	sprite("steel"),
+	pos(300, 100),
+	area(),
+	body({ mass: 10 }),
+])
+
+add([
+	sprite("steel"),
+	pos(10, 200),
+	area(),
+	body({ mass: 10 }),
+])
+add([
+	sprite("steel"),
+	pos(150, 200),
+	area(),
+	body({ mass: 10 }),
+])
+
+add([
+	sprite("steel"),
+	pos(300, 50),
+	area(),
+	body({ mass: 10 }),
+])
+
+
+	destroy(enemy)
+})
+
+player.onCollideUpdate("enemy", () => {
+})
+
+player.onCollideEnd("grass", (a) => {
+	debug.log("leave grass")
+})
+
+player.onClick(() => {
+	debug.log("what up")
+})
+
+player.onUpdate(() => {
+	hovered on
+	if (player.isHovering()) {
+		player.color = rgb(0, 0, 255)
+	} else {
+		player.color = rgb()
+	}
+})
+
+
+debug.inspect = true
+
 `````
 
 <!-- 
