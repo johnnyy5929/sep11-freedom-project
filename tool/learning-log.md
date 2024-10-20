@@ -41,8 +41,7 @@ The other way of insteading it is the same but there isn't any words.
 ````
 ![hi](Screenshot_6-10-2024_15134_jsbin.com.jpeg)
 
-### X/X/XX:
-* Text
+So after doing m,y research on Kaboom I learned many things and combined them. So somethings that I added to this is sprite which is the character of this game. Another thing I added was const which makes everything the same. another example of this is `````js const Speed =320````` 
 
 
 <!-- 
