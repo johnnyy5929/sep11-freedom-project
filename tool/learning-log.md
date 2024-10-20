@@ -44,7 +44,37 @@ The other way of insteading it is the same but there isn't any words.
 So after doing m,y research on Kaboom I learned many things and combined them. So somethings that I added to this is sprite which is the character of this game. Another thing I added was const which makes everything the same. another example of this is 
 `````js 
 const Speed =320
-````` 
+`````
+
+Another thing I learned was onKeyDown, which makes it so when one key is down something will happen. For example:
+
+`````js
+onKeyDown("left", () => {
+	player.move(-SPEED, 0)
+})
+
+onKeyDown("right", () => {
+	player.move(SPEED, 0)
+})
+
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+
+onKeyDown("q", () => {
+	player.angle -= SPEED * dt()
+})
+
+onKeyDown("e", () => {
+	player.angle += SPEED * dt()
+})
+`````
+
+
 
 
 <!-- 
