@@ -253,7 +253,7 @@ player.onUpdate(() => {
 debug.inspect = true
 
 `````
-![js]()
+![js](Screenshot_20-10-2024_192348_kaboomjs.com.jpeg)
 
 <!-- 
 * Links you used today (websites, videos, etc)
