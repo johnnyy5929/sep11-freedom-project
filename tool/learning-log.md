@@ -516,7 +516,7 @@ onKeyDown("down", () => {
 	player.move(0, SPEED)
 })
 `````
-![hi]()
+![hi](Screenshot_27-10-2024_201135_kaboomjs.com.jpeg)
 
 
 <!-- 
