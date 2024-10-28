@@ -256,6 +256,269 @@ debug.inspect = true
 ![js](Screenshot_20-10-2024_192348_kaboomjs.com.jpeg)
 So as you can see here I used all the code I needed for a fake pacman game. You can move and eat the ghost. This is what I did for LL1.
 
+
+
+## 10/27/24
+## LL2
+
+I started to play around we the Ai in kaboom. You are able to make an enemy shot you. 
+The code I had for this is 
+`````js
+const enemy = add([
+	sprite("ghosty"),
+	pos(width() - 80, height() - 80),
+	anchor("center"),
+	// This enemy cycle between 3 states, and start from "idle" state
+	state("move", [ "idle", "attack", "move" ]),
+	area(),
+	body(),
+])
+`````
+This adds an enemy into your game.
+The next code I did was:
+`````js
+enemy.onStateEnter("idle", async () => {
+	await wait(0.5)
+	enemy.enterState("attack")
+})
+
+// When we enter "attack" state, we fire a bullet, and enter "move" state after 1 sec
+enemy.onStateEnter("attack", async () => {
+
+	// Don't do anything if player doesn't exist anymore
+	if (player.exists()) {
+
+		const dir = player.pos.sub(enemy.pos).unit()
+
+		add([
+			pos(enemy.pos),
+			move(dir, BULLET_SPEED),
+			rect(12, 12),
+			area(),
+			offscreen({ destroy: true }),
+			anchor("center"),
+			color(BLUE),
+			"bullet",
+		])
+
+	}
+
+	await wait(1)
+	enemy.enterState("move")
+
+})
+
+enemy.onStateEnter("move", async () => {
+	await wait(2)
+	enemy.enterState("idle")
+})
+`````
+This allows the enemy to shot at people and gave the shape of the bullet. 
+These are the code I learned and I used them to make a fun game where you run around trying not to get hit.
+The code for that is:
+
+`````js
+kaboom()
+
+loadSprite("bean", "/sprites/bean.png")
+loadSprite("ghosty", "/sprites/ghosty.png")
+loadSprite("grass", "/sprites/grass.png")
+const SPEED = 320
+const ENEMY_SPEED = 160
+const BULLET_SPEED = 800
+
+const player = add([
+	sprite("bean"),
+	pos(80, 80),
+	area(),
+	anchor("center"),
+	body(),
+])
+
+const enemy = add([
+	sprite("ghosty"),
+	pos(width() - 80, height() - 80),
+	anchor("center"),
+	state("move", [ "idle", "attack", "move" ]),
+	area(),
+	body(),
+])
+
+add([
+	sprite("grass"),
+	pos(100, 200),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+add([
+	sprite("grass"),
+	pos(163, 200),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(163, 500),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(503, 500),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(703, 450),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(303, 450),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(230, 700),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(700, 100),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(500, 300),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+add([
+	sprite("grass"),
+	pos(505, 300),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(545, 555),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+
+add([
+	sprite("grass"),
+	pos(545, 705),
+	area(),
+	body({ isStatic: true }),
+	"grass",
+	
+])
+enemy.onStateEnter("idle", async () => {
+	await wait(0.5)
+	enemy.enterState("attack")
+})
+
+
+enemy.onStateEnter("attack", async () => {
+
+
+	if (player.exists()) {
+
+		const dir = player.pos.sub(enemy.pos).unit()
+
+		add([
+			pos(enemy.pos),
+			move(dir, BULLET_SPEED),
+			rect(12, 12),
+			area(),
+			offscreen({ destroy: true }),
+			anchor("center"),
+			color(BLUE),
+			"bullet",
+		])
+
+	}
+
+	await wait(1)
+	enemy.enterState("move")
+
+})
+
+enemy.onStateEnter("move", async () => {
+	await wait(2)
+	enemy.enterState("idle")
+})
+
+
+enemy.onStateUpdate("move", () => {
+	if (!player.exists()) return
+	const dir = player.pos.sub(enemy.pos).unit()
+	enemy.move(dir.scale(ENEMY_SPEED))
+})
+
+
+player.onCollide("bullet", (bullet) => {
+	destroy(bullet)
+	destroy(player)
+	addKaboom(bullet.pos)
+})
+
+
+onKeyDown("left", () => {
+	player.move(-SPEED, 0)
+})
+
+onKeyDown("right", () => {
+	player.move(SPEED, 0)
+})
+
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+`````
+![hi]()
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
