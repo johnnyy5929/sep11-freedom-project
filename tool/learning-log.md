@@ -261,7 +261,7 @@ So as you can see here I used all the code I needed for a fake pacman game. You 
 ## 10/27/24
 ## LL2
 
-I started to play around we the Ai in kaboom. You are able to make an enemy shot you. 
+I started to play around the Ai in kaboom. You are able to make an enemy shoot you. 
 The code I had for this is 
 `````js
 const enemy = add([
@@ -313,8 +313,8 @@ enemy.onStateEnter("move", async () => {
 	enemy.enterState("idle")
 })
 `````
-This allows the enemy to shot at people and gave the shape of the bullet. 
-These are the code I learned and I used them to make a fun game where you run around trying not to get hit.
+This allows the enemy to shoot at people and gives the shape of the bullet. 
+These are the codes I learned and I used them to make a fun game where you run around trying not to get hit.
 The code for that is:
 
 `````js
@@ -517,7 +517,7 @@ onKeyDown("down", () => {
 })
 `````
 ![hi](Screenshot_27-10-2024_201135_kaboomjs.com.jpeg)
-
+As you can see the blue thing is the bullet and the ghost is shooting it. So this is what I did for LL2 and a game where you run around until he kills you. I will probably make this better and more fun for the future. Where you have to fight a boss to shoot at you. This is something I will do later for LL3.
 
 <!-- 
 * Links you used today (websites, videos, etc)
@@ -526,5 +526,6 @@ onKeyDown("down", () => {
 * Questions you still have
 * What you're going to try next
 -->
+
 
 
