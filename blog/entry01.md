@@ -2,7 +2,7 @@
 ##### 11/3/24
 
 ## Content 
-So we have a year long project called the freedomproject. In this project I have to choose a couple of tools. The first tool I picked was kaboom, and my backup tool is next.js. So what is so intersting about kaboom, kaboom is a place where you can make 2D games. This got me really intersted, it reminds me of the old games I used to play. My backup was next.js where you can make website better. this got me interested, I could make a website for a game. However by the end I decicied to use kaboom. So with kaboom I am planning on making a game with Katherine. The game we will make is a cooking game so people who are afriad of cooking in real life can get a understanding online. So wondering how I beem tinkering well, you can see in my LL1 below how I been tinkering. 
+So we have a year long project called the freedomproject. In this project I have to choose a couple of tools. The first tool I picked was kaboom, and my backup tool is next.js. So what is so intersting about kaboom, kaboom is a place where you can make 2D games. This got me really intersted, it reminds me of the old games I used to play. My backup was next.js where you can make website better. this got me interested, I could make a website for a game. However by the end I decicied to use kaboom. So with kaboom I am planning on making a game with Katherine. The game we will make is a cooking game so people who are afriad of cooking in real life can get a understanding online. So wondering how I beem tinkering well, you can see in my (learning log)[../tool/learning-log.md] that I been tinkering by 
 
 ## Sources 
 
