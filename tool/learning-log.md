@@ -524,11 +524,44 @@ As you can see the blue thing is the bullet and the ghost is shooting it. So thi
 ### LL3
 ### 11/3/24
 
-
-
-
-
-
+I learned a little bit of code for LL3. The first code I laerned for LL3 is.
+`````
+player.onGround(() => {
+	debug.log("ouch")
+})
+`````
+What this does is allow a text to pop up when you touch the ground. Another code I learned is
+`````
+onKeyPress("space", () => {
+	if (player.isGrounded()) {
+		player.jump(JUMP_FORCE)
+		player.play("jump")
+	}
+})
+`````
+When you jump on the top left it will show you jump. Another code is
+`````
+	anims: {
+		"idle": {
+			// Starts from frame 0, ends at frame 3
+			from: 0,
+			to: 3,
+			// Frame per second
+			speed: 5,
+			loop: true,
+		},
+		"run": {
+			from: 4,
+			to: 7,
+			speed: 10,
+			loop: true,
+		},
+		// This animation only has 1 frame
+		"jump": 8,
+	},
+})
+`````
+What this code does is that when there idle the frame will be an amount, if it is jump it will be 8 and if you are running it between 4-7.
 
 
 
