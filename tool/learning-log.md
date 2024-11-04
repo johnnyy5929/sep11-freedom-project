@@ -524,7 +524,7 @@ As you can see the blue thing is the bullet and the ghost is shooting it. So thi
 ### LL3
 ### 11/3/24
 
-I learned a little bit of code for LL3. The first code I laerned for LL3 is.
+I learned a little bit of code for LL3. The first code I learned  for LL3 is.
 `````
 player.onGround(() => {
 	debug.log("ouch")
@@ -561,10 +561,10 @@ When you jump on the top left it will show you jump. Another code is
 	},
 })
 `````
-What this code does is that when there idle the frame will be an amount, if it is jump it will be 8 and if you are running it between 4-7.
+What this code does is that when there is idle the frame will be an amount, if it is jump it will be 8 and if you are running it between 4-7.
 
 ![hi](Screenshot_3-11-2024_193255_kaboomjs.com.jpeg)
-As you can see it shows that the frame is 8 and that the charcter is jumping.
+As you can see it shows that the frame is 8 and that the character is jumping.
 
 ![j](Screenshot_3-11-2024_193246_kaboomjs.com.jpeg)
 As you can see in this, it shows that it is idle and the frame is 0-4 and that it says ouch after they touch the ground. These were the codes I learned for LL3 and I will be learning more for LL4.
@@ -577,6 +577,7 @@ As you can see in this, it shows that it is idle and the frame is 0-4 and that i
 * Questions you still have
 * What you're going to try next
 -->
+
 
 
 
