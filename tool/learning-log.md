@@ -519,6 +519,20 @@ onKeyDown("down", () => {
 ![hi](Screenshot_27-10-2024_201135_kaboomjs.com.jpeg)
 As you can see the blue thing is the bullet and the ghost is shooting it. So this is what I did for LL2 and a game where you run around until he kills you. I will probably make this better and more fun for the future. Where you have to fight a boss to shoot at you. This is something I will do later for LL3.
 
+
+
+### LL3
+### 11/3/24
+
+
+
+
+
+
+
+
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
