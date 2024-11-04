@@ -563,10 +563,10 @@ When you jump on the top left it will show you jump. Another code is
 `````
 What this code does is that when there idle the frame will be an amount, if it is jump it will be 8 and if you are running it between 4-7.
 
-[hi](Screenshot_3-11-2024_193255_kaboomjs.com.jpeg)
+![hi](Screenshot_3-11-2024_193255_kaboomjs.com.jpeg)
 As you can see it shows that the frame is 8 and that the charcter is jumping.
 
-[j](Screenshot_3-11-2024_193246_kaboomjs.com.jpeg)
+![j](Screenshot_3-11-2024_193246_kaboomjs.com.jpeg)
 As you can see in this, it shows that it is idle and the frame is 0-4 and that it says ouch after they touch the ground. These were the codes I learned for LL3 and I will be learning more for LL4.
 
 
