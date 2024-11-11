@@ -520,9 +520,8 @@ onKeyDown("down", () => {
 As you can see the blue thing is the bullet and the ghost is shooting it. So this is what I did for LL2 and a game where you run around until he kills you. I will probably make this better and more fun for the future. Where you have to fight a boss to shoot at you. This is something I will do later for LL3.
 
 
-
 ### LL3
-### 11/3/24
+### 11/10/24
 
 I learned a little bit of code for LL3. The first code I learned  for LL3 is.
 `````
@@ -568,7 +567,6 @@ As you can see it shows that the frame is 8 and that the character is jumping.
 
 ![j](Screenshot_3-11-2024_193246_kaboomjs.com.jpeg)
 As you can see in this, it shows that it is idle and the frame is 0-4 and that it says ouch after they touch the ground. These were the codes I learned for LL3 and I will be learning more for LL4.
-
 
 <!-- 
 * Links you used today (websites, videos, etc)
