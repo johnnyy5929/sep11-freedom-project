@@ -879,6 +879,15 @@ go("main", 0)
 ```````
 
 
+
+
+
+
+![](Screenshot_24-11-2024_192014_kaboomjs.com.jpeg)
+![]()
+![]()
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
