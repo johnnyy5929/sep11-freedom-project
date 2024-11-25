@@ -887,6 +887,7 @@ go("main", 0)
 ![](Screenshot_24-11-2024_192024_kaboomjs.com.jpeg)
 ![](Screenshot_24-11-2024_192034_kaboomjs.com.jpeg)
 
+This is what I did for LL4 we made a RPG game where you can explore and talk to the npc and roam.
 
 <!-- 
 * Links you used today (websites, videos, etc)
