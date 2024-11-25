@@ -584,7 +584,7 @@ For LL4 I was able to make levels. The code for this is.
 		},
 	}
 `````
-So This code makes it so you can tak to people in the levels and what they say.
+So This code makes it so you can talk to people in the levels and what they say.
 
 
 `````js
@@ -658,7 +658,7 @@ So This code makes it so you can tak to people in the levels and what they say.
 			],
 		},
   `````
-this code makes it so we give something a variable and make it connect back to the levels. We can give them a width and height. We make a outline for everything and use the symbols to give it a value. like - is steel and other stuff is different sprite.
+this code makes it so we give something a variable and make it connect back to the levels. We can give them width and height. We make an outline for everything and use the symbols to give it a value. like - is steel and other stuff is different sprite.
 
 The whole code is:
 ```````js
@@ -762,7 +762,7 @@ scene("main", (levelIdx) => {
 			],
 		},
 		// any() is a special function that gets called everytime there's a
-		// symbole not defined above and is supposed to return what that symbol
+		// symbol not defined above and is supposed to return what that symbol
 		// means
 		wildcardTile(ch) {
 			const char = characters[ch]
@@ -887,7 +887,7 @@ go("main", 0)
 ![](Screenshot_24-11-2024_192024_kaboomjs.com.jpeg)
 ![](Screenshot_24-11-2024_192034_kaboomjs.com.jpeg)
 
-This is what I did for LL4 we made a RPG game where you can explore and talk to the npc and roam.
+This is what I did for LL4. We made a RPG game where you can explore and talk to the npc and roam.
 
 <!-- 
 * Links you used today (websites, videos, etc)
@@ -896,6 +896,8 @@ This is what I did for LL4 we made a RPG game where you can explore and talk to 
 * Questions you still have
 * What you're going to try next
 -->
+
+
 
 
 
