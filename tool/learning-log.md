@@ -884,7 +884,7 @@ go("main", 0)
 
 
 ![](Screenshot_24-11-2024_192014_kaboomjs.com.jpeg)
-![]()
+![](Screenshot_24-11-2024_192024_kaboomjs.com.jpeg)
 ![]()
 
 
