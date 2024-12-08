@@ -983,7 +983,7 @@ blueBean.onHoverUpdate(() => {
 	debug.log("blue bean on hover")
 })
 `````
-!(j)[Screenshot_6-10-2024_15712_jsbin.com.jpeg]
+![j](Screenshot_6-10-2024_15712_jsbin.com.jpeg)
 
 
 
