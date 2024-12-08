@@ -918,13 +918,13 @@ blueBean.onHoverUpdate(() => {
 		wave(0, 255, t + 4),
 	)
 `````
-These are the two code we can use.
+These are the two codes we can use.
 
 We can use this with a sprite to make a color changing thing when you put your mouse over it.
 
 The whole code is:
 `````js
-// Differeces between onHover and onHoverUpdate
+// Differences between onHover and onHoverUpdate
 
 kaboom({
 	// Use logMax to see more messages on debug.log()
@@ -995,6 +995,7 @@ These are the two different hovers used. It is really cool. This is what my LL5 
 * Questions you still have
 * What you're going to try next
 -->
+
 
 
 
