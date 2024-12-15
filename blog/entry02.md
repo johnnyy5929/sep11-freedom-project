@@ -29,8 +29,57 @@ blueBean.onHoverUpdate(() => {
 	)
 `````
 These are the two codes we can use allow you to hover over something. 
-Other codes I have learned 
+Other codes I have learned are
+`````js
+	const characters = {
+		"a": {
+			sprite: "bag",
+			msg: "Hi Bean! You should get that key!",
+		},
+		"b": {
+			sprite: "ghosty",
+			msg: "Who are you? You can see me??",
+		},
+	}
+`````
+So This code makes it so you can talk to people in the levels and what they say.
+
+
+`````js
+	// level layouts
+	const levels = [
+		[
+			"===|====",
+			"=      =",
+			"= $    =",
+			"=    a =",
+			"=      =",
+			"=   @  =",
+			"========",
+		],
+		[
+			"--------",
+			"-      -",
+			"-   $  -",
+			"|      -",
+			"-    b -",
+			"-  @   -",
+			"--------",
+		],
+		[		
+			"========",
+		    "=      =",
+			"= $    =",
+			"=    a =",
+			"|      =",
+			"=   @  =",
+			"========",
+		],
+	]
+These are most of the codes I have learned.
+
 ## Engineering Design Process
+So the EDP part I am on right now would be 4 which is the planning.
 
 ## Skills 
 
