@@ -85,7 +85,7 @@ Engineering Design process is the part of the project you are on. So I am curren
 ## Skills 
 
 ### Researching
-
+researching is a really important skill that I learned when doing this blog and my LL. I need to research how to do some of these codes. How they work and how I can use them together. so learning how to research was a really important part that will help me later on in the year. 
 
 ### Communcation 
 
