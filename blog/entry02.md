@@ -80,14 +80,14 @@ So This code makes it so you can talk to people in the levels and what they say.
 These are most of the codes I have learned.
 
 ## Engineering Design Process
-So the EDP part I am on right now would be 4 which is the planning.
+Engineering Design process is the part of the project you are on. So I am currently on the forth Engineering Design process which is planning, I define the problem, research the problem and Brainstorm the problem. Now I need to find a way to make the product, so I am planning on making a game with Kaboom. I learned a lot from my learning log. I made a design of the game in my mind and a outline using kaboom. I know what codes I need to use and the next step is the prototype part. so this is the part of the Engineering Design part I am on.
 
 ## Skills 
 
-### 
+### Researching
 
 
-### 
+### Communcation 
 
 
 ### Plans for the break
