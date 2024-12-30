@@ -998,7 +998,78 @@ So for LL6 I was working with my partner Katherine where I made a outline and sh
 ![i](tool/Screenshot_30-12-2024_13517_docs.google.com.jpeg)
 As you can see this is the plan I made where it is a prototype of our game. It isn't fully done yet but there will be different levels where you an do different things you can go back or keep going. 
 
-The other thing I did was learn how to make npc and be able to talk to them.
+The other thing I did was learn how to make npc and be able to talk to them. So I wrote a code in my ide since before I was just using the website now. I am going to do everything in my ide.
+So what I did which you can see below is a code that allows you to talk to people and you can press space and it keeps talking.
+
+`````js
+
+kaboom({
+	background: [ 255, 209, 253 ],
+})
+
+loadSprite("bean", "/sprites/../person.png")
+loadSprite("mark", "/sprites/../women.png")
+
+// Define the dialogue data
+const dialogs = [
+	[ "bean", "hi my butterfly" ],
+	[ "bean", "i love u" ],
+	[ "bean", "you love me? pretty baby" ],
+	[ "bean", "he did not know how to take care of you..." ],
+	[ "mark", "you don't know me ..." ],
+	[ "bean", "what! baby???" ],
+	[ "mark", "oh...hi " ],
+]
+
+let curDialog = 0
+
+// Text bubble
+const textbox = add([
+	rect(width() - 200, 120, { radius: 32 }),
+	anchor("center"),
+	pos(center().x, height() - 100),
+	outline(4),
+])
+
+// Text
+const txt = add([
+	text("", { size: 32, width: width() - 230, align: "center" }),
+	pos(textbox.pos),
+	anchor("center"),
+	color(0, 0, 0),
+])
+
+// Character avatar
+const avatar = add([
+	sprite("bean"),
+	scale(3),
+	anchor("center"),
+	pos(center().sub(0, 50)),
+])
+
+onKeyPress("space", () => {
+	// Cycle through the dialogs
+	curDialog = (curDialog + 1) % dialogs.length
+	updateDialog()
+})
+
+// Update the on screen sprite & text
+function updateDialog() {
+
+	const [ char, dialog ] = dialogs[curDialog]
+
+	// Use a new sprite component to replace the old one
+	avatar.use(sprite(char))
+	// Update the dialog text
+	txt.text = dialog
+
+}
+
+updateDialog()
+
+
+`````
+
 
 
 
