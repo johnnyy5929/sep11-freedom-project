@@ -1070,8 +1070,8 @@ updateDialog()
 
 `````
 
-![i](tool/Screenshot 2024-12-30 2.24.31 PM.jpeg)
-![i](tool/Screenshot 2024-12-30 2.24.50 PM.jpeg)
+![i](Screenshot 2024-12-30 2.24.31 PM.jpeg)
+![i](Screenshot 2024-12-30 2.24.50 PM.jpeg)
 
 
 
