@@ -1072,9 +1072,10 @@ updateDialog()
 `````
 
 
+![](women.png)
+![](hi.png)
 
-
-
+As you can see here the people can talk to each other and when you press space it keeps going. What I want to do next is make it so that get to pick between options and the computer will respond depending on what you pick. This is my plans for LL7 and I will make it so computer come and go. This would be really cool. Also I will need to add a way to have different people join. These are the plans for the future and for my other LL. Thank you
 
 
 
