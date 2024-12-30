@@ -993,13 +993,13 @@ These are the two different hovers used. It is really cool. This is what my LL5 
 // LL6
 // 12/30/24
 
-So for LL6 I was working with my partner Katherine where I made a outline and she coded the outline to the best of her ability. So the plan I made is below. 
+So for LL6 I was working with my partner Katherine where I made an outline and she coded the outline to the best of her ability. So the plan I made is below. 
 
 ![i](tool/Screenshot_30-12-2024_13517_docs.google.com.jpeg)
 
-As you can see this is the plan I made where it is a prototype of our game. It isn't fully done yet but there will be different levels where you an do different things you can go back or keep going. 
+As you can see this is the plan I made where it is a prototype of our game. It isn't fully done yet but there will be different levels where you can do different things you can go back or keep going. 
 
-The other thing I did was learn how to make npc and be able to talk to them. So I wrote a code in my ide since before I was just using the website now. I am going to do everything in my ide.
+The other thing I did was learn how to make npc and be able to talk to them. So I wrote a code on my ide since before I was just using the website now. I am going to do everything on my ide.
 So what I did which you can see below is a code that allows you to talk to people and you can press space and it keeps talking.
 
 `````js
@@ -1075,7 +1075,7 @@ updateDialog()
 ![](women.png)
 ![](hi.png)
 
-As you can see here the people can talk to each other and when you press space it keeps going. What I want to do next is make it so that get to pick between options and the computer will respond depending on what you pick. This is my plans for LL7 and I will make it so computer come and go. This would be really cool. Also I will need to add a way to have different people join. These are the plans for the future and for my other LL. Thank you
+As you can see here the people can talk to each other and when you press space it keeps going. What I want to do next is make it so that I get to pick between options and the computer will respond depending on what you pick. This is my plan for LL7 and I will make it so computers come and go. This would be really cool. Also I will need to add a way to have different people join. These are the plans for the future and for my other LL. Thank you
 
 
 
@@ -1087,6 +1087,7 @@ As you can see here the people can talk to each other and when you press space i
 * Questions you still have
 * What you're going to try next
 -->
+
 
 
 
