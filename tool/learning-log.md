@@ -985,7 +985,24 @@ blueBean.onHoverUpdate(() => {
 `````
 ![j](Screenshot_8-12-2024_163429_kaboomjs.com.jpeg)
 ![k](Screenshot_8-12-2024_163440_kaboomjs.com.jpeg)
-These are the two different hovers used. It is really cool. This is what my LL5 was about. Thnak you
+These are the two different hovers used. It is really cool. This is what my LL5 was about. Thank you
+
+
+
+
+// LL6
+// 12/30/24
+
+So for LL6 I was working with my partner Katherine where I made a outline and she coded the outline to the best of her ability. So the plan I made is below. 
+
+![i](tool/Screenshot_30-12-2024_13517_docs.google.com.jpeg)
+As you can see this is the plan I made where it is a prototype of our game. It isn't fully done yet but there will be different levels where you an do different things you can go back or keep going. 
+
+The other thing I did was learn how to make npc and be able to talk to them.
+
+
+
+
 
 
 <!-- 
