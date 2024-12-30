@@ -996,6 +996,7 @@ These are the two different hovers used. It is really cool. This is what my LL5 
 So for LL6 I was working with my partner Katherine where I made a outline and she coded the outline to the best of her ability. So the plan I made is below. 
 
 ![i](tool/Screenshot_30-12-2024_13517_docs.google.com.jpeg)
+
 As you can see this is the plan I made where it is a prototype of our game. It isn't fully done yet but there will be different levels where you an do different things you can go back or keep going. 
 
 The other thing I did was learn how to make npc and be able to talk to them. So I wrote a code in my ide since before I was just using the website now. I am going to do everything in my ide.
@@ -1070,8 +1071,7 @@ updateDialog()
 
 `````
 
-![i](Screenshot 2024-12-30 2.24.31 PM.jpeg)
-![i](Screenshot 2024-12-30 2.24.50 PM.jpeg)
+
 
 
 
