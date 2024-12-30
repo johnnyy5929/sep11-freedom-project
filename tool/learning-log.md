@@ -985,7 +985,17 @@ blueBean.onHoverUpdate(() => {
 `````
 ![j](Screenshot_8-12-2024_163429_kaboomjs.com.jpeg)
 ![k](Screenshot_8-12-2024_163440_kaboomjs.com.jpeg)
-These are the two different hovers used. It is really cool. This is what my LL5 was about. Thnak you
+These are the two different hovers used. It is really cool. This is what my LL5 was about. Thank you
+
+
+
+
+// LL6
+// 12/30/24
+
+So for LL6 I was working with my partner Katherine where I made a outline and she coded the outline to the best of her ability. So the plan I made was.
+
+
 
 
 <!-- 
