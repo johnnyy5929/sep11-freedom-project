@@ -1,7 +1,22 @@
 # Entry 3
-##### X/X/XX
+##### 2/3/25
 
-Text
+## Content 
+
+## Engineering Design Process
+
+
+## Skills 
+
+## Researching
+
+
+## Communication 
+
+
+
+## What I did during the break
+
 
 [Previous](entry02.md) | [Next](entry04.md)
 
