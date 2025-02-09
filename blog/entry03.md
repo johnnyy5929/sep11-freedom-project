@@ -83,7 +83,7 @@ As you can see above the people are talking to each other.
 So the firs thing we need to do is combined this with Katherine thing. So we can have a game where you can go through levels and talk to people. After we need to add more levels, make it so wehn you press space you talk to people and esc to leave the talking. These are some of the plans we got and that we still need to work on. 
 
 ## Engineering Design Process
-
+The Engineering Design process is the part of the project you are on. So I am currently on the fifth Engineering Design process which is create, so the problem we are fixing is that people are too scared to cook. So maybe they would want to cook online, what we are doing is making a game where people can cook, make their own way of cooking, serving customers and having fun with friends. So far we have made a prototype where my teammate has made the levels and I have made it so you can talk to people. This is our prototype so far, we need to add improvements and add more things to do in the game. therefore the step we are on is the create step which is making a prototype of the game which we made a part of the game so far. 
 
 ## Skills 
 
