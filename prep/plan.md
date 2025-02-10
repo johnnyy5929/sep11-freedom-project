@@ -6,12 +6,12 @@
 ---
 
 ## Timeline
-- [ ] finish planning/outline freedom project by 2/14
-- [ ] 
+[ ] finish planning/outline freedom project by 2/14 
+[ ] 
 
 #### MVP
 
-- [ ] Task (deadline: X)
+ - [ ] Task (deadline: X)
   - [ ] Subtask (deadline: X)
 
 #### Beyond MVP
