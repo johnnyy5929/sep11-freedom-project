@@ -7,7 +7,8 @@
 
 ## Timeline
 - [ ] finish planning/outline freedom project by 2/14 
-- [ ] xxxx
+- [ ] create starting page
+   - add 
 
 #### MVP
 
