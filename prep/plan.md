@@ -1,11 +1,13 @@
 # Plan
 
-## Tool: 
-## Product: 
+## Tool: Kaboom.js
+## Product: Cooking game
 
 ---
 
 ## Timeline
+- [ ] finish planning/outline freedom project by 2/14
+- [ ] 
 
 #### MVP
 
