@@ -6,8 +6,8 @@
 ---
 
 ## Timeline
-[ ] finish planning/outline freedom project by 2/14 
-[ ] 
+- [ ] finish planning/outline freedom project by 2/14 
+- [ ] xxxx
 
 #### MVP
 
