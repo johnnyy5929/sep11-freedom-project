@@ -9,19 +9,21 @@
 - [ ] finish planning/outline freedom project by 2/14 
 - [ ] create starting page
    - add
-- [ ] learn more code on Kaboom (every week)
-- [ ] make a prototype (2/24)
-- [ ] 
+- [ ] learn more code on Kaboom (every week)(both) 
+- [ ] make a prototype (2/24)(both) 
+- [ ] learning how to use javascript (everyweek)(both) 
 
 #### MVP
 
- - [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
+ - [ ] Make different stages of cooking (deadline: 2/24)(katherine)
+ - [ ] Add animation (deadline: 2/26 )(Johnny)
+ - [ ] Add texture(deadline: 2/28)(katherine)
+ - [ ] Make the character sprite (deadline: 3/2)(Johnny)
 
 #### Beyond MVP
 
-- [ ] Task
-  - [ ] Subtask
+- [ ] Make it so you can leave the building(Johnny)
+  - [ ] Make a map on the top corner (Katherine)
 
 
 <!-- EXAMPLE
