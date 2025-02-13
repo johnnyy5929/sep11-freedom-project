@@ -8,7 +8,10 @@
 ## Timeline
 - [ ] finish planning/outline freedom project by 2/14 
 - [ ] create starting page
-   - add 
+   - add
+- [ ] learn more code on Kaboom (every week)
+- [ ] make a prototype (2/24)
+- [ ] 
 
 #### MVP
 
