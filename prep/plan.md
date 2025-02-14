@@ -19,11 +19,19 @@
  - [ ] Add animation (deadline: 2/26 )(Johnny)
  - [ ] Add texture(deadline: 2/28)(katherine)
  - [ ] Make the character sprite (deadline: 3/2)(Johnny)
+ - [ ] Adding music (deadline: 3/20)(katherine)
+ - [ ] Add npc to the game(deadline: 3/29)(katherine)
+ - [ ] making the npc chat(deadline 3/29)(Johnny)
 
 #### Beyond MVP
 
-- [ ] Make it so you can leave the building(Johnny)
+- [ ] Adding more features 
   - [ ] Make a map on the top corner (Katherine)
+  - [ ] Make it so you can leave the building(Johnny)
+  - [ ] Expanding the world (Katherine)
+  - [ ] Adding better color(johnny)
+  - [ ] making a website for the game (johnny)
+  - [ ] making so you need to collect resources for the game(katherine)
 
 
 <!-- EXAMPLE
