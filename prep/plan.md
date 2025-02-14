@@ -29,9 +29,9 @@
   - [ ] Make a map on the top corner (Katherine)
   - [ ] Make it so you can leave the building(Johnny)
   - [ ] Expanding the world (Katherine)
-  - [ ] Adding better color(johnny)
-  - [ ] making a website for the game (johnny)
-  - [ ] making so you need to collect resources for the game(katherine)
+  - [ ] Adding better color make everything look better(johnny)
+  - [ ] making a website for the game a website to explain what the game is (johnny)
+  - [ ] making so you need to collect resources for the game like cutting down a tree for wood to make a fire(katherine)
 
 
 <!-- EXAMPLE
