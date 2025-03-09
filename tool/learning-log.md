@@ -1078,7 +1078,74 @@ updateDialog()
 As you can see here the people can talk to each other and when you press space it keeps going. What I want to do next is make it so that I get to pick between options and the computer will respond depending on what you pick. This is my plan for LL7 and I will make it so computers come and go. This would be really cool. Also I will need to add a way to have different people join. These are the plans for the future and for my other LL. Thank you
 
 
+LL9
+3/8/25
 
+So for this LL we learned how to move with a mouse. So what I mean by this is when you click your character will move to the place you click to. This is cool for those who don't like arrow keys. I was going to add this as a way of moving. So the code I learned is this:
+
+```` js
+// Tweeeeeening!
+
+kaboom({
+	background: [141, 183, 255],
+})
+
+loadSprite("bean", "/sprites/bean.png")
+
+const duration = 1
+const easeTypes = Object.keys(easings)
+let curEaseType = 0
+
+const bean = add([
+	sprite("bean"),
+	pos(center()),
+	rotate(0),
+	anchor("center"),
+])
+
+const label = add([
+	text(easeTypes[curEaseType], { size: 64 }),
+	pos(24, 24),
+])
+
+add([
+	text("Click anywhere & use arrow keys", { width: width() }),
+	anchor("botleft"),
+	pos(24, height() - 24),
+])
+
+onKeyPress("left", () => {
+	curEaseType = curEaseType === 0 ? easeTypes.length - 1 : curEaseType - 1
+	label.text = easeTypes[curEaseType]
+})
+
+onKeyPress("right", () => {
+	curEaseType = (curEaseType + 1) % easeTypes.length
+	label.text = easeTypes[curEaseType]
+})
+
+let curTween = null
+
+onMousePress(() => {
+	const easeType = easeTypes[curEaseType]
+	// stop previous lerp, or there will be jittering
+	if (curTween) curTween.cancel()
+	// start the tween
+	curTween = tween(
+		// start value (accepts number, Vec2 and Color)
+		bean.pos,
+		// destination value
+		mousePos(),
+		// duration (in seconds)
+		duration,
+		// how value should be updated
+		(val) => bean.pos = val,
+		// interpolation function (defaults to easings.linear)
+		easings[easeType],
+	)
+})
+`````
+As you can see in this code there is a thing called Onpress which makes it so when you press down it will move. So when I press down it will move the character.
 
 <!-- 
 * Links you used today (websites, videos, etc)
