@@ -1147,6 +1147,8 @@ onMousePress(() => {
 `````
 As you can see in this code there is a thing called Onpress which makes it so when you press down it will move. So when I press down it will move the character.
 ![](Screenshot_8-3-2025_191636_kaboomjs.com.jpeg)
+![](Screenshot_8-3-2025_191659_kaboomjs.com.jpeg)
+As you can see you can move and use arrows or press to move. We are going to use this for the project so it was good to know. This is what I have done for LL9 and going to do more.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
