@@ -1146,7 +1146,7 @@ onMousePress(() => {
 })
 `````
 As you can see in this code there is a thing called Onpress which makes it so when you press down it will move. So when I press down it will move the character.
-
+![](Screenshot_8-3-2025_191636_kaboomjs.com.jpeg)
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
