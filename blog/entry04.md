@@ -58,7 +58,7 @@ onMousePress(() => {
 		// start value (accepts number, Vec2, and Color)
 		bean.pos,
 		// destination value
-		mousePos(),
+		mouses(),
 		// duration (in seconds)
 		duration,
 		// how value should be updated
@@ -85,10 +85,10 @@ The Engineering Design process is the part of the project you are on. I am curre
 ## Skills 
 
 ## Researching
-
+Researching is a really important part, I had to research how to use kaboom, and find pictures. Sometimes when I am trying to find a picture I can't so I had to improve my researching and type in more so that I can find what I am looking for. This was important because let's stay I was trying to find a part of Kaboom I didn't know I couldn't just search Kaboom and find what I am looking for I needed to search Kaboom mousepress or something like that to find the code I was looking for. So I learned that this is important.
 
 ## Communication 
-
+Another thing I learned is how important communication is, when you are working with a teammate you need to communicate because if you don't it is hard to know what your partner is thinking and what you should be doing. During this, I ask what my partner is doing and we both learn different things so we can finish faster. Also, communication is useful when you need help like when I having trouble learning something I can ask people for help this is important because if Google can't help me maybe someone else can. So communication is really important and it can be helpful in the future, you should always be communicated so communication is really important and is a skill that we should use and do for everything it is helpful and easy to finish when you talk to someone.
 
 
 
