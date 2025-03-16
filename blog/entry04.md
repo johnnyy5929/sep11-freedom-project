@@ -5,7 +5,7 @@
 This is my blog 4. So as you may know we have this project called the Freedom Project which is our year-long project. We picked a tool that we wanted to use and made a game out of it or whatever we wanted. So what I decided to pick was kaboom js. I have been using this tool by using [kaboom website](https://kaboomjs.com/) in this website you are allowed to see the codes you can use and you can go to the playground which has games and codes for those games. Another thing I used was the [learning log](../tool/learning-log.md) Here you can see all the LL I have done. So we had a break and we did some stuff but most of what I have done is for my LL.
 
 ## My LL 7-9
-So something I have been learning is how to move the character in different ways, and also how to use different keys when trying to play a game. What I mean by this is when you press w you move up or when you press left mouse you attack or something so I been driving deeper into this and learned:
+So something I have been learning is how to move the character in different ways, and also how to use different keys when trying to play a game. What I mean by this is when you press w you move up or when you press left mouse you attack or something so I have been driving deeper into this and learned:
 `````js
 // Tweeeeeening!
 
@@ -72,13 +72,15 @@ onMousePress(() => {
 ![](../tool/Screenshot_8-3-2025_191636_kaboomjs.com.jpeg)
 ![](../tool/Screenshot_8-3-2025_191659_kaboomjs.com.jpeg)
 
-
+This shows that I have been trying to learn how to move and make other keys do different things. 
 
 
 ### Future and MVP
 
+So far we learned how to move a character, how to make different keys do different things, and make different maps, what we need to do for the future is add texture, make it so the person can cook, and make NPC where they can ask different things. This is what we need to do for the future. 
+
 ## Engineering Design Process
-The Engineering Design process is the part of the project you are on. I am currently on the fifth Engineering Design process which is created, so the problem we are fixing is that people are too scared to cook. So maybe they would want to cook online, what we are doing is making a game where people can cook, make their own way of cooking, serving customers, and having fun with friends. So far we have made a prototype where my teammate has made the levels and I have made it so you can talk to people. This is our prototype so far, we need to make improvements and add more things to do in the game. therefore the step we are on is the create step which is making a prototype of the game which we made a part of the game so far. 
+The Engineering Design process is the part of the project you are on. I am currently on the fifth Engineering Design process which is created, so the problem we are fixing is that people are too scared to cook. So we are making a game where you can cook online, so you can learn it online first, and you can have brust cooking with friends. So far we have made a prototype where my teammate has made the levels and I have made it so you can talk to people. Also, made it so you can move the characters and make different keys do different stuff. This is our prototype so far, we need to make improvements and add more things to do in the game. Therefore the step we are on is the create step which is making a prototype of the game which we are doing more a more each day. We will almost be done with the project. 
 
 ## Skills 
 
