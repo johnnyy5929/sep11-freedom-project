@@ -5,7 +5,69 @@
 This is my blog 4. So as you may know we have this project called the Freedom Project which is our year-long project. We picked a tool that we wanted to use and made a game out of it or whatever we wanted. So what I decided to pick was kaboom js. I have been using this tool by using [kaboom website](https://kaboomjs.com/) in this website you are allowed to see the codes you can use and you can go to the playground which has games and codes for those games. Another thing I used was the [learning log](../tool/learning-log.md) Here you can see all the LL I have done. So we had a break and we did some stuff but most of what I have done is for my LL.
 
 ## My LL 7-9
+So something I have been learning is how to move the character in different ways, and also how to use different keys when trying to play a game. What I mean by this is when you you press w you move up or when you press left mouse you attack or something so I been driving deeper into this and learned:
+`````js
+// Tweeeeeening!
 
+kaboom({
+	background: [141, 183, 255],
+})
+
+loadSprite("bean", "/sprites/bean.png")
+
+const duration = 1
+const easeTypes = Object.keys(easings)
+let curEaseType = 0
+
+const bean = add([
+	sprite("bean"),
+	pos(center()),
+	rotate(0),
+	anchor("center"),
+])
+
+const label = add([
+	text(easeTypes[curEaseType], { size: 64 }),
+	pos(24, 24),
+])
+
+add([
+	text("Click anywhere & use arrow keys", { width: width() }),
+	anchor("botleft"),
+	pos(24, height() - 24),
+])
+
+onKeyPress("left", () => {
+	curEaseType = curEaseType === 0 ? easeTypes.length - 1 : curEaseType - 1
+	label.text = easeTypes[curEaseType]
+})
+
+onKeyPress("right", () => {
+	curEaseType = (curEaseType + 1) % easeTypes.length
+	label.text = easeTypes[curEaseType]
+})
+
+let curTween = null
+
+onMousePress(() => {
+	const easeType = easeTypes[curEaseType]
+	// stop previous lerp, or there will be jittering
+	if (curTween) curTween.cancel()
+	// start the tween
+	curTween = tween(
+		// start value (accepts number, Vec2 and Color)
+		bean.pos,
+		// destination value
+		mousePos(),
+		// duration (in seconds)
+		duration,
+		// how value should be updated
+		(val) => bean.pos = val,
+		// interpolation function (defaults to easings.linear)
+		easings[easeType],
+	)
+})
+`````
 
 
 
@@ -20,10 +82,9 @@ The Engineering Design process is the part of the project you are on. I am curre
 ## Skills 
 
 ## Researching
-One of the most important parts is the research. I had to do a lot of searches to find what I was looking for. There were many codes that I had to find, so I had to research hard and long until I found the right codes. After that, I also had to find pictures that I could use for the code and find ways to use the code. This is why research is important: You find stuff that you really need. 
+
 
 ## Communication 
-Communication is really important as you during the break I needed to talk with my teammate since we needed to get work done. I had to talk to them when I needed help and when they wanted help. This got us through a lot as when we didn't understand something we just asked each other. Also when we were working together I had to ask what the code was looking at and what we should do and not do. During the break, we couldn't talk in school as there was no school. So communication is one of the most important skills that we should all know and it would be helpful in the future since later on you have to talk with others.
 
 
 
