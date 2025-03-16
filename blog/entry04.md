@@ -69,7 +69,8 @@ onMousePress(() => {
 })
 `````
 
-
+![](../tool/Screenshot_8-3-2025_191636_kaboomjs.com.jpeg)
+![](../tool/Screenshot_8-3-2025_191659_kaboomjs.com.jpeg)
 
 
 
