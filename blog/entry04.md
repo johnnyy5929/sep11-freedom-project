@@ -5,7 +5,7 @@
 This is my blog 4. So as you may know we have this project called the Freedom Project which is our year-long project. We picked a tool that we wanted to use and made a game out of it or whatever we wanted. So what I decided to pick was kaboom js. I have been using this tool by using [kaboom website](https://kaboomjs.com/) in this website you are allowed to see the codes you can use and you can go to the playground which has games and codes for those games. Another thing I used was the [learning log](../tool/learning-log.md) Here you can see all the LL I have done. So we had a break and we did some stuff but most of what I have done is for my LL.
 
 ## My LL 7-9
-So something I have been learning is how to move the character in different ways, and also how to use different keys when trying to play a game. What I mean by this is when you you press w you move up or when you press left mouse you attack or something so I been driving deeper into this and learned:
+So something I have been learning is how to move the character in different ways, and also how to use different keys when trying to play a game. What I mean by this is when you press w you move up or when you press left mouse you attack or something so I been driving deeper into this and learned:
 `````js
 // Tweeeeeening!
 
@@ -55,7 +55,7 @@ onMousePress(() => {
 	if (curTween) curTween.cancel()
 	// start the tween
 	curTween = tween(
-		// start value (accepts number, Vec2 and Color)
+		// start value (accepts number, Vec2, and Color)
 		bean.pos,
 		// destination value
 		mousePos(),
