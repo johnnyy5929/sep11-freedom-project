@@ -1505,8 +1505,8 @@ player.onUpdate(() => {
 })
 ````
 This is the code as you can see where you have us and them and we are fighting them.
-![](Screenshot_8-3-2025_191636_kaboomjs.com.jpeg)
 ![](Screenshot_22-3-2025_192212_kaboomjs.com.jpeg)
+As you can see the monster can attack us and we can attack them. This is something I learned and will be using in the future. This is my LL10 and what I did.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
