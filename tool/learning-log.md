@@ -1149,6 +1149,362 @@ As you can see in this code there is a thing called Onpress which makes it so wh
 ![](Screenshot_8-3-2025_191636_kaboomjs.com.jpeg)
 ![](Screenshot_8-3-2025_191659_kaboomjs.com.jpeg)
 As you can see you can move and use arrows or press to move. We are going to use this for the project so it was good to know. This is what I have done for LL9 and going to do more.
+
+LL10
+3/23/25
+
+So LL10 I made a code where you fight against people it is like a RPG game where you explore and you kill monsters for stuff and you can cook with the stuff was idea. So I made a game where you can start fighting aginst people and you get stuff for it. 
+
+```` js
+kaboom({
+	scale: 4,
+	background: [0, 0, 0],
+})
+
+// Load sprite atlas
+loadSpriteAtlas("/examples/sprites/dungeon.png", {
+	"hero": {
+		"x": 128,
+		"y": 196,
+		"width": 144,
+		"height": 28,
+		"sliceX": 9,
+		"anims": {
+			"idle": {
+				"from": 0,
+				"to": 3,
+				"speed": 3,
+				"loop": true,
+			},
+			"run": {
+				"from": 4,
+				"to": 7,
+				"speed": 10,
+				"loop": true,
+			},
+			"hit": 8,
+		},
+	},
+	"ogre": {
+		"x": 16,
+		"y": 320,
+		"width": 256,
+		"height": 32,
+		"sliceX": 8,
+		"anims": {
+			"idle": {
+				"from": 0,
+				"to": 3,
+				"speed": 3,
+				"loop": true,
+			},
+			"run": {
+				"from": 4,
+				"to": 7,
+				"speed": 10,
+				"loop": true,
+			},
+		},
+	},
+	"floor": {
+		"x": 16,
+		"y": 64,
+		"width": 48,
+		"height": 48,
+		"sliceX": 3,
+		"sliceY": 3,
+	},
+	"chest": {
+		"x": 304,
+		"y": 304,
+		"width": 48,
+		"height": 16,
+		"sliceX": 3,
+		"anims": {
+			"open": {
+				"from": 0,
+				"to": 2,
+				"speed": 20,
+				"loop": false,
+			},
+			"close": {
+				"from": 2,
+				"to": 0,
+				"speed": 20,
+				"loop": false,
+			},
+		},
+	},
+	"sword": {
+		"x": 322,
+		"y": 81,
+		"width": 12,
+		"height": 30,
+	},
+	"wall": {
+		"x": 16,
+		"y": 16,
+		"width": 16,
+		"height": 16,
+	},
+	"wall_top": {
+		"x": 16,
+		"y": 0,
+		"width": 16,
+		"height": 16,
+	},
+	"wall_left": {
+		"x": 16,
+		"y": 128,
+		"width": 16,
+		"height": 16,
+	},
+	"wall_right": {
+		"x": 0,
+		"y": 128,
+		"width": 16,
+		"height": 16,
+	},
+	"wall_topleft": {
+		"x": 32,
+		"y": 128,
+		"width": 16,
+		"height": 16,
+	},
+	"wall_topright": {
+		"x": 48,
+		"y": 128,
+		"width": 16,
+		"height": 16,
+	},
+	"wall_botleft": {
+		"x": 32,
+		"y": 144,
+		"width": 16,
+		"height": 16,
+	},
+	"wall_botright": {
+		"x": 48,
+		"y": 144,
+		"width": 16,
+		"height": 16,
+	},
+})
+
+// Floor
+addLevel([
+	"xxxxxxxxxx",
+	"          ",
+	"          ",
+	"          ",
+	"          ",
+	"          ",
+	"          ",
+	"          ",
+	"          ",
+	"          ",
+], {
+	tileWidth: 16,
+	tileHeight: 16,
+	tiles: {
+		" ": () => [
+			sprite("floor", { frame: ~~rand(0, 8) }),
+		],
+	},
+})
+
+// Objects
+const map = addLevel([
+	"tttttttttt",
+	"cwwwwwwwwd",
+	"l        r",
+	"l        r",
+	"l        r",
+	"l      $ r",
+	"l        r",
+	"l $      r",
+	"attttttttb",
+	"wwwwwwwwww",
+], {
+	tileWidth: 16,
+	tileHeight: 16,
+	tiles: {
+		"$": () => [
+			sprite("chest"),
+			area(),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+			{ opened: false },
+			"chest",
+		],
+		"a": () => [
+			sprite("wall_botleft"),
+			area({ shape: new Rect(vec2(0), 4, 16) }),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+		"b": () => [
+			sprite("wall_botright"),
+			area({ shape: new Rect(vec2(12, 0), 4, 16) }),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+		"c": () => [
+			sprite("wall_topleft"),
+			area(),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+		"d": () => [
+			sprite("wall_topright"),
+			area(),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+		"w": () => [
+			sprite("wall"),
+			area(),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+		"t": () => [
+			sprite("wall_top"),
+			area({ shape: new Rect(vec2(0, 12), 16, 4) }),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+		"l": () => [
+			sprite("wall_left"),
+			area({ shape: new Rect(vec2(0), 4, 16) }),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+		"r": () => [
+			sprite("wall_right"),
+			area({ shape: new Rect(vec2(12, 0), 4, 16) }),
+			body({ isStatic: true }),
+			tile({ isObstacle: true }),
+		],
+	},
+})
+
+// Player
+const player = map.spawn([
+	sprite("hero", { anim: "idle" }),
+	area({ shape: new Rect(vec2(0, 6), 12, 12) }),
+	body(),
+	anchor("center"),
+	tile(),
+	health(3), // Player health
+], 2, 2)
+
+// Sword
+const sword = player.add([
+	pos(-4, 9),
+	sprite("sword"),
+	anchor("bot"),
+	rotate(0),
+	area({ scale: 0.8 }),
+	"weapon",
+])
+
+// Enemy
+function spawnEnemy(x, y) {
+	const enemy = map.spawn([
+		sprite("ogre", { anim: "idle" }),
+		area({ scale: 0.8 }),
+		body(),
+		anchor("center"),
+		health(2), // Enemy health
+		"enemy",
+		state("idle", ["idle", "chase", "attack"]),
+	], x, y)
+
+	// Enemy AI
+	enemy.onStateEnter("idle", () => {
+		enemy.play("idle")
+	})
+
+	enemy.onStateEnter("chase", () => {
+		enemy.play("run")
+	})
+
+	enemy.onStateUpdate("chase", () => {
+		const dir = player.pos.sub(enemy.pos).unit()
+		enemy.move(dir.scale(50))
+	})
+
+	enemy.onStateEnter("attack", () => {
+		enemy.play("idle")
+		player.hurt(1) // Damage player
+		wait(1, () => enemy.enterState("chase"))
+	})
+
+	enemy.onUpdate(() => {
+		if (enemy.state !== "attack" && player.pos.dist(enemy.pos) < 64) {
+			enemy.enterState("chase")
+		}
+		if (enemy.state === "chase" && player.pos.dist(enemy.pos) < 16) {
+			enemy.enterState("attack")
+		}
+	})
+
+	enemy.onCollide("weapon", () => {
+		enemy.hurt(1) // Damage enemy
+		if (enemy.hp() <= 0) {
+			destroy(enemy)
+		}
+	})
+}
+
+// Spawn enemies
+spawnEnemy(5, 4)
+spawnEnemy(7, 6)
+
+// Combat
+onKeyPress("space", () => {
+	sword.spin()
+	for (const enemy of get("enemy")) {
+		if (sword.isColliding(enemy)) {
+			enemy.hurt(1) // Damage enemy
+			if (enemy.hp() <= 0) {
+				destroy(enemy)
+			}
+		}
+	}
+})
+
+// Player movement
+const SPEED = 120
+
+onKeyDown("right", () => {
+	player.flipX = false
+	sword.flipX = false
+	player.move(SPEED, 0)
+	sword.pos = vec2(-4, 9)
+})
+
+onKeyDown("left", () => {
+	player.flipX = true
+	sword.flipX = true
+	player.move(-SPEED, 0)
+	sword.pos = vec2(4, 9)
+})
+
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+
+// Camera follows player
+player.onUpdate(() => {
+	camPos(player.pos)
+})
+````
+This is the code as you can see where you have us and them and we are fighting them.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
