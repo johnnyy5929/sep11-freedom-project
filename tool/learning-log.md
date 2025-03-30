@@ -1507,6 +1507,220 @@ player.onUpdate(() => {
 This is the code as you can see where you have us and them and we are fighting them.
 ![](Screenshot_22-3-2025_192212_kaboomjs.com.jpeg)
 As you can see the monster can attack us and we can attack them. This is something I learned and will be using in the future. This is my LL10 and what I did.
+
+LL11
+3/30/25
+
+For this LL I made a kitchen for our project, so our project is like a cooking gam,e so I made the kitchen for it.
+`````js
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <title>Kitchen Chaos</title>
+        <style>
+            body {
+                background-color: #333;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
+        <script>
+            kaboom({
+                               background: [173, 216, 230], // Light blue kitchen walls
+                width: 1000,  // Smaller canvas width
+                height: 800  // Smaller canvas height
+            });
+
+            // Load kitchen-themed sprites
+            loadSprite("chef", "sprites/../c.png");
+            loadSprite("stove", "sprites/../sink.png");
+            loadSprite("counter", "sprites/../counter.png");
+            loadSprite("fridge", "sprites/../I.png");
+            loadSprite("sink", "sprites/../s.png");
+
+            // Define kitchen stations and staff
+            const kitchenElements = {
+                "s": { // Stove
+                    sprite: "stove",
+                    msg: "Cook here!",
+                },
+                "f": { // Fridge
+                    sprite: "fridge",
+                    msg: "Get ingredients!",
+                },
+                "k": { // Sink
+                    sprite: "sink",
+                    msg: "Wash dishes!",
+                },
+                "m": { // Manager
+                    sprite: "stove",
+                    msg: "Hurry up!",
+                }
+            };
+
+            const levels = [
+                // Smaller kitchen layout
+                [
+                    "------------",
+                    "-          -",
+                    "- s  f   k -",
+                    "- C  C   C -",
+                    "-          -",
+                    "-     @    -",
+                    "-          -",
+                    "- C     m  -",
+                    "-          -",
+                    "------------",
+                ]
+            ];
+
+            let score = 0;
+
+            scene("main", (levelIdx) => {
+                const SPEED = 240;
+
+                const level = addLevel(levels[levelIdx], {
+                    tileWidth: 64,
+                    tileHeight: 64,
+                    pos: vec2(64, 64),
+                    tiles: {
+                        "-": () => [
+                            rect(64, 64),
+                            color(105, 105, 105), // Steel counter floor
+                            area(),
+                            body({ isStatic: true }),
+                        ],
+                        "C": () => [
+                            sprite("counter"),
+                            area(),
+                            body({ isStatic: true }),
+                            "counter",
+                            scale(0.7)
+                        ],
+                        "@": () => [
+                            sprite("chef"),
+                            area(),
+                            body(),
+                            "chef",
+                            scale(0.5)
+                        ]
+                    },
+                    wildcardTile(ch) {
+                        const element = kitchenElements[ch];
+                        if (element) {
+                            return [
+                                sprite(element.sprite),
+                                area(),
+                                body({ isStatic: true }),
+                                "station",
+                                {
+                                    msg: element.msg
+                                },
+                            ];
+                        }
+                    },
+                });
+
+                const chef = level.get("chef")[0];
+
+                function addDialog() {
+                    const h = 100;  // Smaller dialog box
+                    const pad = 12;
+                    const bg = add([
+                        pos(0, height() - h),
+                        rect(width(), h),
+                        color(0, 0, 0, 200),
+                        z(100),
+                    ]);
+                    const txt = add([
+                        text("", {
+                            width: width() - pad * 2,
+                            size: 16  // Smaller text
+                        }),
+                        pos(pad, height() - h + pad),
+                        z(100),
+                        color(255, 255, 255),
+                    ]);
+                    bg.hidden = true;
+                    txt.hidden = true;
+                    return {
+                        say(t) {
+                            txt.text = t;
+                            bg.hidden = false;
+                            txt.hidden = false;
+                        },
+                        dismiss() {
+                            if (!this.active()) return;
+                            txt.text = "";
+                            bg.hidden = true;
+                            txt.hidden = true;
+                        },
+                        active() {
+                            return !bg.hidden;
+                        },
+                    };
+                }
+
+                const dialog = addDialog();
+
+                const scoreDisplay = add([
+                    text(`Orders: ${score}`, { size: 20 }),  // Smaller score display
+                    pos(20, 20),
+                    color(0, 0, 0),
+                    z(50),
+                    fixed()
+                ]);
+
+                chef.onCollide("station", (station) => {
+                    dialog.say(station.msg);
+                    // Simple scoring - press space to complete action
+                    onKeyPress("space", () => {
+                        score++;
+                        scoreDisplay.text = `Orders: ${score}`;
+                        dialog.dismiss();
+                    });
+                });
+
+                const dirs = {
+                    "left": LEFT,
+                    "right": RIGHT,
+                    "up": UP,
+                    "down": DOWN,
+                };
+                for (const dir in dirs) {
+                    onKeyPress(dir, () => dialog.dismiss());
+                    onKeyDown(dir, () => chef.move(dirs[dir].scale(SPEED)));
+                }
+
+                add([
+                    text("Kitchen", {  // Smaller title
+                        size: 28,
+                        width: width(),
+                    }),
+                    pos(width() / 2, 20),  // Moved up
+                    anchor("center"),
+                    color(70, 130, 180),
+                    z(50),
+                    fixed()
+                ]);
+            });
+
+            go("main", 0);
+        </script>
+    </body>
+</html>
+`````
+This is the code to the project. our project, as I said, needs a kitchen, so that is what I did this time.
+
+
+
+![]()
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
