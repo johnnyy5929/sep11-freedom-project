@@ -1720,7 +1720,7 @@ This is the code to the project. our project, as I said, needs a kitchen, so tha
 
 
 
-![](../Screenshot_30-3-2025_185536_www.bing.com.jpeg)
+![](Screenshot_30-3-2025_185536_www.bing.com.jpeg)
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
