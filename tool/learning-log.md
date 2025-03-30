@@ -1720,7 +1720,10 @@ This is the code to the project. our project, as I said, needs a kitchen, so tha
 
 
 
-![](Screenshot_30-3-2025_185536_www.bing.com.jpeg)
+![](k.png)
+
+
+This is what I did for LL11, and I will be adding this to our work
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
