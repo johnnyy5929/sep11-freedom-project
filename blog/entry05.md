@@ -630,10 +630,10 @@ This is my blog 5. Throughout this school year, we had a project called the Free
 </html>
 `````
 This is the code I did for my project. 
-![](Screenshot_25-4-2025_192324_katherinew5896.github.io.jpeg)
-![](Screenshot_25-4-2025_192328_katherinew5896.github.io.jpeg)
-![](Screenshot_25-4-2025_192335_katherinew5896.github.io.jpeg)
-![](Screenshot_25-4-2025_192341_katherinew5896.github.io.jpeg)
+![](../tool/Screenshot_25-4-2025_192324_katherinew5896.github.io.jpeg)
+![](../tool/Screenshot_25-4-2025_192328_katherinew5896.github.io.jpeg)
+![](../tool/Screenshot_25-4-2025_192335_katherinew5896.github.io.jpeg)
+![](../tool/Screenshot_25-4-2025_192341_katherinew5896.github.io.jpeg)
 
 ## Engineering Design Process
 
