@@ -6,9 +6,12 @@ This is my blog 5. Throughout this school year, we had a project called the Free
 
 
 
+
+## Takeaways of the Expo elevator pitch
+
+## Takeaways of in-class presentation 
+
 ## Skills 
-
-
 
 
 [Previous](entry05.md) | [Next](entry07.md)
