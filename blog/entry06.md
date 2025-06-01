@@ -1082,7 +1082,7 @@ One takeaway from the class presentation  is that I should spend some time think
 
 Another takeaway is that I should make more eye contact. In my opinion, I feel like I didn't look around enough. I feel that when I was talking, I was just looking at my computer, which isn't good because I don't know what people were thinking when I was presenting, and I wouldn't know if they could hear me.
 
-The last takeaway was that you should be prepared before presenting in class. If we weren't ready, we wouldn't know who is doing what and what part is whose. This is something I was making sure we do before we present. Which made it so that it went smoothly. Therefore, we know what to do next time, and these are my takeaways. 
+The last takeaway was that you should be prepared before presenting in class. If we weren't ready, we wouldn't know who is doing what and what part is whose. This is something I was making sure we do before we present. Which made it so that it went smoothly. Therefore, we know what to do next time, and these are my takeaways. Now we learned for next time.
 
 
 [Previous](entry05.md) | [Next](entry07.md)
